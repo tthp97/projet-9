@@ -171,7 +171,7 @@ ul {
 }
 .f-active {
     background-color: #beb45a;
-    color: white;
+    color: black;
 }
 
 .title {
@@ -308,6 +308,17 @@ form textarea {
 input[type='submit'] {
     background-color: #beb45a;
     padding: 0.5em 1em;
+}
+.infoContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #a8d5d8;
+}
+
+.infoContainer p {
+    text-align: center;
 }
 @media (max-width: 1280px) {
     .picture {

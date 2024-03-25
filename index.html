@@ -10,8 +10,57 @@
             href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
         />
         <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Bienvenue à vous sur le site de photographie de Nina Carducci. Vous pouvez y consulter les tarifs et visualiser des créations."
+        />
+        <meta
+            property="og:title"
+            content="Nina Carducci, photographe professionnelle basée à Bordeaux"
+        />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tthp97.github.io/projet-9/" />
+        <meta property="og:author" content="Nina Carducci" />
+        <meta
+            property="og:description"
+            content="Bienvenue à vous sur le site de photographie de Nina Carducci. Vous pouvez y consulter les tarifs et visualiser des créations."
+        />
+        <meta
+            property="og:image"
+            content="./assets/images/slider/1920/edward-1920.webp"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Nina Carducci Photographe",
+                "image": "./assets/images/nina.webp",
+                "telephone": "05 56 67 78 89",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "68 avenue Alsace-Lorraine",
+                    "addressLocality": "Bordeaux",
+                    "postalCode": "33200",
+                    "addressCountry": "FR"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "10:00",
+                    "closes": "19:00"
+                }
+            }
+        </script>
         <title>Nina Carducci</title>
     </head>
+
     <body>
         <header>
             <h1 class="name">Nina Carducci</h1>
@@ -27,7 +76,9 @@
                             class="social-link"
                             href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
                             target="_blank"
-                            ><img src="assets/images/instagram.webp" alt=""
+                            ><img
+                                src="assets/images/instagram.webp"
+                                alt="reseau social instagram"
                         /></a>
                     </li>
                 </ul>
@@ -45,21 +96,21 @@
                     <img
                         src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
                         class="slide active"
-                        alt="..."
+                        alt="Slide 1 Edward Cisneros"
                         fetchpriority="high"
                     />
 
                     <img
                         src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
                         class="slide"
-                        alt="..."
+                        alt="Slide 2 Nicholas Green"
                         fetchpriority="low"
                     />
 
                     <img
                         src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
                         class="slide"
-                        alt="..."
+                        alt="Slide 3 Ryoji Iwata"
                         fetchpriority="low"
                     />
                 </div>
@@ -79,7 +130,10 @@
 
             <div id="about">
                 <div class="picture left">
-                    <img src="./assets/images/nina.webp" />
+                    <img
+                        src="./assets/images/nina.webp"
+                        alt="Créateur du site Nina Carducci"
+                    />
                 </div>
                 <div id="about-me">
                     <h2 class="about-me__title">A propos de moi</h2>
@@ -120,46 +174,55 @@
                             data-name="Concert"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+                            alt="Concert Aaron Paul"
                         />
                         <img
                             data-name="Entreprises"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+                            alt="Entreprise Ali Morshedlou"
                         />
                         <img
                             data-name="Entreprises"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+                            alt="Entreprise Jason Goodman"
                         />
                         <img
                             data-name="Mariages"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+                            alt="Mariage Hannah Busing"
                         />
                         <img
                             data-name="Portrait"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+                            alt="Portrait Ade Tunji"
                         />
                         <img
                             data-name="Mariages"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+                            alt="Mariage Jakob Owens"
                         />
                         <img
                             data-name="Portrait"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+                            alt="Portrait Nino Van-Prattenburg"
                         />
                         <img
                             data-name="Concert"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+                            alt="Concert Austin Neill"
                         />
                         <img
                             data-name="Entreprises"
                             class="gallery-item image-active"
                             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+                            alt="Entreprise Mateus Campos-Felipe"
                         />
                     </div>
                 </div>
@@ -245,6 +308,14 @@
             </div>
         </main>
         <footer>
+            <div class="infoContainer">
+                <h3>Mes Coordonées</h3>
+                <p>Mon adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+                <p>Mon numéro de téléphone : 05 56 67 78 89.</p>
+                <p>
+                    Je réponds au téléphone du lundi au vendredi de 10h à 19h.
+                </p>
+            </div>
             <div id="contact">
                 <div class="container">
                     <div class="form-container">
@@ -253,7 +324,7 @@
                             N’hésitez pas à m’écrire ! Je vous répondrais en
                             moins de 24 heures
                         </p>
-                        <form action="" method="post">
+                        <form method="post">
                             <label for="nom">Nom</label>
                             <input type="text" name="nom" id="nom" />
                             <label for="email">Email</label>
@@ -269,11 +340,14 @@
                         </form>
                     </div>
                     <div class="picture right">
-                        <img src="./assets/images/camera.webp" />
+                        <img
+                            src="./assets/images/camera.webp"
+                            alt="Footer Caméra"
+                        />
                     </div>
                 </div>
             </div>
         </footer>
+        <script type="module" src="./assets/scripts.js"></script>
     </body>
-    <script type="module" src="./assets/scripts.js" defer></script>
 </html>
